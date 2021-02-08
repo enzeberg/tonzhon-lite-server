@@ -1,0 +1,28 @@
+{
+  "name": "tonzhon-lite-server",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development && node ./bin/www",
+    "dev": "cross-env NODE_ENV=development && nodemon ./bin/www",
+    "prod": "cross-env NODE_ENV=production pm2 start ./bin/www"
+  },
+  "author": "enzeberg",
+  "license": "MIT",
+  "dependencies": {
+    "big-integer": "^1.6.25",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "^4.17.1",
+    "express-useragent": "^1.0.12",
+    "morgan": "~1.9.0",
+    "node-fetch": "^2.6.1",
+    "pac-proxy-agent": "^4.1.0",
+    "simple-netease-cloud-music": "^0.5.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
