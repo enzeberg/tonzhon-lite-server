@@ -1,7 +1,7 @@
 const songsMapper = (songs) => {
   return songs.map((song, index) => ({
     originalId: song.songmid,
-    newId: `qq${song.songmid}`,
+    newId: `q${song.songmid}`,
     name: song.songname,
     alias: song.lyric, // if no lyric: ''
     mv: song.vid ? song.vid : null,

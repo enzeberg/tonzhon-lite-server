@@ -2,7 +2,7 @@ const songsMapper = (songs) => {
   return songs.map(song => {
     return ({
       originalId: String(song.rid),
-      newId: `kuwo${song.rid}`,
+      newId: `k${song.rid}`,
       name: song.name,
       artists: [{
         name: song.artist,
