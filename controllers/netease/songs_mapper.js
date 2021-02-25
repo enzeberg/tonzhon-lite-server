@@ -15,9 +15,6 @@ const songsMapper = (songs) => {
       name: song.al.name,
       id: song.al.id,
     },
-    // hasCopyright: song.privilege.cp === 1,
-    hasCopyright: true,
-    fee: song.fee,
     platform: 'netease',
   }));
 };

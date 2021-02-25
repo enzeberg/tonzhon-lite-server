@@ -20,25 +20,20 @@ const songsMapper = (songs) => {
     const mvId = song.mv.vid;
     return ({
       originalId: song.mid,
-      newId: `qq${song.mid}`,
+      newId: `q${song.mid}`,
       name: song.name,
-      // link: `${qqMusicUrl}song/${song.mid}.html`,
       alias: song.subtitle, // if no lyric: ''
-      // mvLink: mvId ? `${qqMusicUrl}mv/v/${mvId}.html` : null,
       mv: mvId ? mvId : null,
       artists: song.singer.map((artist) => {
         return {
           name: artist.name,
-          // link: `${qqMusicUrl}singer/${artist.mid}.html`,
           id: artist.mid,
         };
       }),
       album: {
         name: song.album.name,
-        // link: `${qqMusicUrl}album/${song.album.mid}.html`,
         id: song.album.mid
       },
-      // hasCopyright: true,
       platform: 'qq',
     });
   });

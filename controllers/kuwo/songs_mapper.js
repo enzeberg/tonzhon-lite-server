@@ -12,7 +12,6 @@ const songsMapper = (songs) => {
         name: song.album,
         id: song.albumid,
       },
-      // hasCopyright: true,
       platform: 'kuwo',
     });
   });
